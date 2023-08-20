@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<div class="website-colour">
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+    <title>by kea.</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="style-drawings.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+<section class="header">
+    <nav>
+        <a href="index.html" class="web-logo"><img src="barcode.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa-sharp fa-regular fa-circle-xmark" style="color: #ffffff;" onclick="hideMenu()"></i>
+        <ul>
+            <li> <a href="index.html">home</a></li>
+            <li> <a href="aboutme.html">about me</a></li>
+            <li> <a href="inspiration.html">inspiration</a></li>
+            <li> <a href="thefuturte.html">the future</a></li>
+        </ul>
+        </div>
+            <i class="fa-solid fa-bars" style="color: #ffffff;" onclick="showMenu()"></i>
+    </nav>
+        
+<div class="text-box">
+<h1><span class="auto-input"></h1>
+<p>The feeling of putting a 2H pencil to paper and letting my mind<br>run wild is one of the most freeing sensations I've ever come across.<br>There'll always be beauty in something so simple yet so expressive<br>Graphite on paper, expressing onself through art, that is true beauty.<br>Here's a few of the drawings I have in my sketchbook, <br> I hope to fill this 72 age book with all the creativity I have within me.<br>But for now, here's the highlights ;)</p>
+</div>
+        
+</section>
+    
+<!-- ----- Slideshow ----- -->
+
+<section class="slideshow">
+    <div class="slider-wrapper">
+        <div class="slider">
+            <img id="slide-1" src="drawings_slideshow/IMG_20230813_231517_edit_880289922472526.jpg" alt="Drawing 1" />
+            <img id="slide-2" src="drawings_slideshow/IMG_20230813_231403_edit_880382570314939.jpg" alt="Drawing 2" />
+            <img id="slide-3" src="drawings_slideshow/IMG_20230813_231413_edit_880372255379318.jpg" alt="Drawing 3" />
+            <img id="slide-4" src="drawings_slideshow/IMG_20230813_231418_edit_880361336844790.jpg" alt="Drawing 4" />
+            <img id="slide-5" src="drawings_slideshow/IMG_20230813_231425_edit_880350226751826.jpg" alt="Drawing 5" />
+            <img id="slide-6" src="drawings_slideshow/IMG_20230813_231438_edit_880338448522560.jpg" alt="Drawing 6" />
+            <img id="slide-7" src="drawings_slideshow/IMG_20230813_231505_edit_880303933694396.jpg" alt="Drawing 7" />
+            <img id="slide-8" src="drawings_slideshow/IMG_20230813_231513.jpg" alt="Drawing 8" />
+            <img id="slide-9" src="drawings_slideshow/IMG_20230813_231356_edit_880394430974882.jpg" alt="Drawing 9" />
+            <img id="slide-10" src="drawings_slideshow/IMG_20230813_231457_edit_880315859848141.jpg" alt="Drawing 10" />
+            <img id="slide-11" src="drawings_slideshow/IMG_20230813_231523_edit_880277470310500.jpg" alt="Drawing 11" />
+            <img id="slide-12" src="drawings_slideshow/IMG_20230813_231453_edit_880326526336106.jpg" alt="Drawing 12" />
+        </div>
+        <div class="slider-nav">
+            <a href="#slide-1"></a>
+            <a href="#slide-2"></a>
+            <a href="#slide-3"></a>
+            <a href="#slide-4"></a>
+            <a href="#slide-5"></a>
+            <a href="#slide-6"></a>
+            <a href="#slide-7"></a>
+            <a href="#slide-8"></a>
+            <a href="#slide-9"></a>
+            <a href="#slide-10"></a>
+            <a href="#slide-11"></a>
+            <a href="#slide-12"></a>
+        </div>
+    </div>    
+</section>
+
+
+<!-- ----- Footer ----- -->
+
+<section class="footer">
+    <h3>The First of <span class="showoff">Many</span></h3>
+    <p>© by Kea 2023.</p>
+</section>
+
+
+<!-----------Javascript for Toggle Menu----------->
+<script>
+   
+    var navLinks = document.getElementById("navLinks");
+    
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script> 
+
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+<script>
+    var typed = new Typed(".auto-input", {
+        strings: ["Drawing"],
+        typeSpeed: 100,
+        backspeed: 50,
+        loop: true
+    })
+</script>
+
+<script>
+    // Get the slides container
+const slidesContainer = document.querySelector('.slider');
+
+// Initialize variables for tracking scroll positions
+let startX = 0;
+let scrollLeft = 0;
+let isScrolling = false;
+
+// Add event listeners for touch and mouse events
+slidesContainer.addEventListener('mousedown', (e) => {
+  isScrolling = true;
+  startX = e.pageX - slidesContainer.offsetLeft;
+  scrollLeft = slidesContainer.scrollLeft;
+});
+
+slidesContainer.addEventListener('mouseleave', () => {
+  isScrolling = false;
+});
+
+slidesContainer.addEventListener('mouseup', () => {
+  isScrolling = false;
+});
+
+slidesContainer.addEventListener('mousemove', (e) => {
+  if (!isScrolling) return;
+  e.preventDefault();
+  const x = e.pageX - slidesContainer.offsetLeft;
+  const walk = (x - startX) * 3; // Adjust scrolling speed as needed
+  slidesContainer.scrollLeft = scrollLeft - walk;
+
+
+});
+
+slidesContainer.addEventListener('touchstart', (e) => {
+  isScrolling = true;
+  startX = e.touches[0].pageX - slidesContainer.offsetLeft;
+  scrollLeft = slidesContainer.scrollLeft;
+});
+
+slidesContainer.addEventListener('touchend', () => {
+  isScrolling = false;
+});
+
+slidesContainer.addEventListener('touchcancel', () => {
+  isScrolling = false;
+});
+
+slidesContainer.addEventListener('touchmove', (e) => {
+  if (!isScrolling) return;
+  e.preventDefault();
+  const x = e.touches[0].pageX - slidesContainer.offsetLeft;
+  const walk = (x - startX) * 3; // Adjust scrolling speed as needed
+  slidesContainer.scrollLeft = scrollLeft - walk;
+});
+
+</script>
+
+
+</body>
+</html>
+</div>  

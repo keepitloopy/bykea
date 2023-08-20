@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<div class="website-colour">
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+        <title>by kea.</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="style-mathgame.css">
+
+    </head>
+    <body>
+<!-- Header -->
+        <section class="header">
+            <nav>
+                <a href="index.html" class="web-logo"><img src="barcode.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-sharp fa-regular fa-circle-xmark" style="color: #ffffff;" onclick="hideMenu()"></i>
+                <ul>
+                    <li> <a href="index.html">home</a></li>
+                    <li> <a href="aboutme.html">about me</a></li>
+                    <li> <a href="inspiration.html">inspiration</a></li>
+                    <li> <a href="thefuture.html">the future</a></li>
+                </ul>
+                </div>
+                    <i class="fa-solid fa-bars" style="color: #ffffff;" onclick="showMenu()"></i>
+            </nav> 
+            <div class="text-box">
+                <h1><span class="auto-input"></h1>
+                <p>In my almost 11 years of doing some form of Mathematics, I never thought that I'd find myself to solve simple equations<br>such as "12 x 4" again but here I am, trying to code a simple math game that took days to compile.<br>Despite the challenge that it proved to be, it was more than worth it to finally see it in action, enjoy!</p>
+            </div>
+        </section>
+
+<!-- Math Game -->
+<div class="answer">
+        <h3>Fill In The Blank with The Correct Number or Operator ("*" , "+" or "-")</h3>
+        <div id="question"></div>
+        <button id="submit-btn">Submit</button>
+        <p id="error-msg">Some Demo Error Message</p>
+</div>
+<div class="controls-answer">
+    <p id="result"></p>
+    <button id="start-btn">Start Game</button>
+</div>
+
+<!-- Script -->
+
+<script src="script.js"></script>
+
+<!-- Footer -->
+
+<section class="footer">
+    <h3>The First of <span class="showoff">Many</span></h3>
+    <p>© by Kea 2023.</p>
+</section>
+
+<!-- Script for Toggle Menu -->
+    <script>
+            var navLinks = document.getElementById("navLinks");
+    
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+    </script>
+
+<!-- Script for Auto Input -->
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+<script>
+    var typed = new Typed(".auto-input", {
+        strings: ["Mathematics"],
+        typeSpeed: 100,
+        backspeed: 50,
+        loop: true
+    })
+</script>   
+</body>
+</html>
+</div>

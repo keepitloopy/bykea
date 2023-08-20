@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(thefuture.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 300px;
+    
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+    }
+.nav-links ul li::after{
+    content:"";
+    width: 0%;
+    height: 2px;
+    background: #5D3FD3;
+    display: block;
+    margin: auto;
+    transition: 0.5s
+    
+}
+.nav-links ul li:hover::after{
+    width: 100%
+}
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 70px;
+    
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 20px;
+    color: #fff;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 17px;
+    background: transparent;
+    position: relative; 
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #5D3FD3;
+    background: #5D3FD3;
+    transition: 1s
+}
+
+
+nav .fa-sharp{
+   display: none;
+    
+}
+
+nav .fa-solid{
+    display: none;
+}
+
+@media(max-width: 700px){
+    .web-logo img{
+        width: 200px;
+    }
+    .container {
+        width: 100%; 
+        max-width: 1200px; 
+        margin: 0 auto; 
+      }
+    body{
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    .text-box h1{
+        font-size: 40px;
+    }
+    .nav-links ul li{
+        display: block;
+        overflow-x: hidden;
+    }
+    .nav-links{
+        position: absolute;
+        background: #5D3FD3;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+        overflow-x: hidden;
+    }
+        nav .fa-sharp{
+        display: block;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    nav .fa-solid{
+        display: block;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 20px;
+    }
+
+}
+
+/*-----dna-----*/
+
+.dna{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    background: black;
+    color: floralwhite;
+    
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 600;
+    color: floralwhite;
+    
+}
+
+p{
+    color: floralwhite;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 20px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.dna-col{
+    flex-basis: 31%;
+    background: #5D3FD3;
+    border-radius: 7px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.dna-col:hover{
+    box-shadow: 0 0 20px 0px rgb(120, 83, 255);
+}
+
+@media(max-width: 700px){
+    .row{
+        flex-direction:column;
+    }
+    .row2{
+        flex-direction:column;
+    }
+    .unwind-col{
+        flex-basis: 32%;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+        position: relative;
+        overflow: hidden; 
+    }
+}
+
+.auto-input{
+    color: floralwhite;
+}
+
+.change{
+    color: #5D3FD3;
+}
+
+/* hobbies */
+
+.unwind{
+    height: auto;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    background: black;
+}
+
+.unwind_{
+    color: #5D3FD3;
+}
+
+.unwind-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+    overflow: hidden; 
+}
+
+.unwind-col img{
+    height: auto; 
+    max-width: 100%;
+    display: block;
+
+}
+
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer:hover{
+    background: rgba(93, 63, 211, 0.7);
+}
+
+.layer h2{
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover h2{
+    bottom: 49%;
+    opacity: 1;
+}
+
+/* ----- thanks ----- */
+
+.thanks{
+    margin: 100px auto;
+    width: 95%;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(neon.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center; 
+    padding: 100px 0;
+}
+
+.website-colour{
+    background-color: black;
+}
+
+.thanks h1{
+    margin-bottom: 40px;
+    padding: 0;
+
+}
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    color: floralwhite;
+}
+
+.footer h4{
+    margin-bottom: 2px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.footer p{
+    font-size: small;
+}
+
+.preach{
+    width: 100%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.preach p{
+    font-size: 24px;
+    line-height: 70px;
+    
+}
+
+.showoff{
+    color: #5D3FD3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

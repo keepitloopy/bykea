@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<div class="website-colour">
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+    <title>by kea.</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="style-inspiration.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+<section class="header">
+    <nav>
+        <a href="index.html" class="web-logo"><img src="barcode.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa-sharp fa-regular fa-circle-xmark" style="color: #ffffff;" onclick="hideMenu()"></i>
+        <ul>
+            <li> <a href="index.html">home</a></li>
+            <li> <a href="aboutme.html">about me</a></li>
+            <li> <a href="inspiration.html">inspiration</a></li>
+            <li> <a href="thefuture.html">the future</a></li>
+        </ul>
+        </div>
+            <i class="fa-solid fa-bars" style="color: #ffffff;" onclick="showMenu()"></i>
+    </nav>
+        
+<div class="text-box">
+<h1><span class="auto-input"></h1>
+</div>
+        
+</section>
+    
+<!-- ----- Inspiration ----- -->
+
+<section class="preach">
+    <p>I've always had a love for computers but even this was a big leap for me<br> In my head, I would only get to do this "coding" thing after going to University for 4 years and getting a job. <br> I'm glad to say that I was 100% wrong. Good things don't come to those who wait. <br> No longer was I going to wait till "the older me" or "the me in University" took the initiative to reach for my dreams. <br> I am here now and I will do everything I can to achieve my dreams <br> At the beginning of this year I made it a point to have my goals to be the forefront of my mind. <br> And after achieving many of the goals I've set for myself, I'll now undertake the biggest, and most daunting <br> one of them all. Starting my own business and becoming a self-made software developer. This goal won't be so easy, <br> but just like everything else I've done so far, just like this website, I will do it. <br> "There is nothing impossible to they who will try." <span class="showoff">— Alexander the Great</span></p>
+</section>
+
+<!-- ----- Footer ----- -->
+
+<section class="footer">
+    <h3>The First of <span class="showoff">Many</span></h3>
+    <p>© by Kea 2023.</p>
+</section>
+
+
+<!-----------Javascript for Toggle Menu----------->
+<script>
+   
+    var navLinks = document.getElementById("navLinks");
+    
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script> 
+
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+<script>
+    var typed = new Typed(".auto-input", {
+        strings: ["Inspiration"],
+        typeSpeed: 100,
+        backspeed: 50,
+        loop: true
+    })
+</script>
+</body>
+</html>
+</div>  

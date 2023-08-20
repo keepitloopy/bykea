@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<div class="website-colour">
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>by kea.</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="style-aboutme.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+<section class="header">
+    <nav>
+        <a href="index.html" class="web-logo"><img src="barcode.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa-sharp fa-regular fa-circle-xmark" style="color: #ffffff;" onclick="hideMenu()"></i>
+        <ul>
+            <li> <a href="index.html">home</a></li>
+            <li> <a href="aboutme.html">about me</a></li>
+            <li> <a href="inspiration.html">inspiration</a></li>
+            <li> <a href="thefuture.html">the future</a></li>
+        </ul>
+        </div>
+            <i class="fa-solid fa-bars" style="color: #ffffff;" onclick="showMenu()"></i>
+    </nav>
+        
+<div class="text-box">
+<h1><span class="auto-input"></h1>
+</div>
+        
+</section>
+    
+<!-- ----- Inspiration ----- -->
+
+<section class="preach">
+    <p>I am <span class="showoff">Keamogetswe Matome Ratlhallane Jr.</span><br>On the <span class="showoff">9th of July 2006</span>, something beautiful started. <br> From the small township of Seshego, Polokwane, I grew up into something far beyond my imagination. <br> I'm a little bit of a nerd. I always have been. But that's who I am and I couldn't love myself more for that. <br> I'm sure you're already familiar with a few of my favourite things after surfing through this website, but here's a bit more :) <br> I love music with a passion. I've played the electric guitar for almost 3 years and some of my favourite genres are: RnB, Rap, Soul, Funk and J-Pop with, Kanye West, Frank Ocean, Steve Lacy, Beyoncé and Daniel caesar being some of my favourite artists. <br> I'm someone who grows obsessions extremely quickly, whether it's gaming, collecting Pokémon cards, solving Rubik's Cubes, building Lego or anything under the sun, at some point I've had an obsession with it, and I guess now it's coding. <br> And finally, I'd like to think of myself as a very ambitious person, I've never been one comfortable with "settling", <br> My compass has always and will always point forward until I can't progress any longer. That's the only way I know how to live. <br> Living for a better me, every single day.<span class="showoff"> Forever and Always.</span> </p>
+</section>
+
+<!-- ----- Footer ----- -->
+
+<section class="footer">
+    <h3>The First of <span class="showoff">Many</span></h3>
+    <p>© by Kea 2023.</p>
+</section>
+
+
+<!-----------Javascript for Toggle Menu----------->
+<script>
+   
+    var navLinks = document.getElementById("navLinks");
+    
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script> 
+
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+<script>
+    var typed = new Typed(".auto-input", {
+        strings: ["About Me"],
+        typeSpeed: 100,
+        backspeed: 50,
+        loop: true
+    })
+</script>
+</body>
+</html>
+</div>  

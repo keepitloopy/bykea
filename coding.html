@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<div class="website-colour">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>by kea.</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="style-coding.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="stylesheet" href="prism/prism.css">
+
+</head>
+
+
+</head>
+<body>
+<section class="header">
+    <nav>
+        <a href="index.html" class="web-logo"><img src="barcode.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa-sharp fa-regular fa-circle-xmark" style="color: #ffffff;" onclick="hideMenu()"></i>
+        <ul>
+            <li> <a href="index.html">home</a></li>
+            <li> <a href="aboutme.html">about me</a></li>
+            <li> <a href="inspiration.html">inspiration</a></li>
+            <li> <a href="thefuture.html">the future</a></li>
+        </ul>
+        </div>
+            <i class="fa-solid fa-bars" style="color: #ffffff;" onclick="showMenu()"></i>
+    </nav>
+        
+<div class="text-box">
+<h1><span class="auto-input"></h1>
+<p>This is easily the biggest coding project I've ever done and at times I didn't see myself <br> being able to finish it. But I did, this went from being just a vague idea <br> to a fleshed out plan, to a fully functioning website, sitting right in my hands. <br> So here it is, every HTML and CSS file, every JavaScript, image and folder that made this website possible! <br> Linked below is the full project folder with a small snippet of the home page shown on this page. </p>
+<a href="aboutme.html" class="hero-btn">GitHub Link</a>
+
+</div>
+        
+</section>
+    
+<!-- ----- Inspiration ----- -->
+
+<section class="coding" id="embedded">
+    <pre class="language-html"><code class="language-html">
+        &lt;!DOCTYPE html&gt;
+        &lt;div class="website-colour"&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"&gt;
+            &lt;title&gt;by kea.&lt;/title&gt;
+            &lt;link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"&gt;
+            &lt;link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"&gt;
+            &lt;link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"&gt;
+            &lt;link rel="manifest" href="/site.webmanifest"&gt;
+            &lt;link rel="stylesheet" href="style.css"&gt;
+            &lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;
+            &lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;
+            &lt;link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600;700&display=swap" rel="stylesheet"&gt;
+            &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;section class="header"&gt;
+                &lt;nav&gt;
+                    &lt;a href="index.html" class="web-logo"&gt;&lt;img src="barcode.png"&gt;&lt;/a&gt;
+                    &lt;div class="nav-links" id="navLinks"&gt;
+                        &lt;i class="fa-sharp fa-regular fa-circle-xmark" style="color: #ffffff;" onclick="hideMenu()"&gt;&lt;/i&gt;
+                        &lt;ul&gt;
+                            &lt;li&gt; &lt;a href="index.html"&gt;home&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt; &lt;a href="aboutme.html"&gt;about me&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt; &lt;a href="inspiration.html"&gt;inspiration&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt; &lt;a href="thefuture.html"&gt;the future&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/div&gt;
+                        &lt;i class="fa-solid fa-bars" style="color: #ffffff;" onclick="showMenu()"&gt;&lt;/i&gt;
+                &lt;/nav&gt;
+                &lt;div class="text-box"&gt;
+                    &lt;h1&gt;I am &lt;span class="auto-input"&gt;&lt;/h1&gt;
+                    &lt;p&gt;A home for all my favourite things in life &lt;br&gt;and a step towards my dreams :)&lt;/p&gt;
+                    &lt;a href="aboutme.html" class="hero-btn"&gt;Dive In and Learn About Me&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/section&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+        &lt;/div&gt;
+    </code></pre>
+
+<!-- ----- Footer ----- -->
+
+<section class="footer">
+    <h3>The First of <span class="showoff">Many</span></h3>
+    <p>© by Kea 2023.</p>
+</section>
+
+
+<!-----------Javascript for Toggle Menu----------->
+<script>
+   
+    var navLinks = document.getElementById("navLinks");
+    
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script> 
+
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+
+
+<script>
+    var typed = new Typed(".auto-input", {
+        strings: ["Coding"],
+        typeSpeed: 100,
+        backspeed: 50,
+        loop: true
+    })
+</script>
+
+<script src="prism/prism.js"></script>
+
+</body>
+</html>
+</div>  

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<div class="website-colour">
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+    <title>by kea.</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="style-books.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+<section class="header">
+    <nav>
+        <a href="index.html" class="web-logo"><img src="barcode.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa-sharp fa-regular fa-circle-xmark" style="color: #ffffff;" onclick="hideMenu()"></i>
+        <ul>
+            <li> <a href="index.html">home</a></li>
+            <li> <a href="aboutme.html">about me</a></li>
+            <li> <a href="inspiration.html">inspiration</a></li>
+            <li> <a href="thefuturte.html">the future</a></li>
+        </ul>
+        </div>
+            <i class="fa-solid fa-bars" style="color: #ffffff;" onclick="showMenu()"></i>
+    </nav>
+        
+<div class="text-box">
+<h1><span class="auto-input"></h1>
+<p>There aren't many things in this world that could compare to sitting back and sinking in to a good book.<br>Reading has been my companion for many years and has allowed me to live 100s of lives through the<br>extravagant characters and stories I've come across over the years and open up my imagination<br>to places it has never been before! In short, reading is awesome, now here are some of my favoutites.</p>
+</div>
+     
+<!-- Books -->
+
+</section class="unwind">
+
+        <div class="row">
+        <div class="unwind-col">
+            <a href="https://www.takealot.com/a-game-of-thrones/PLID34633372"><img src='unwind/gameofthrones.jpg'>
+            <div class="layer">
+                <h1>#1</h1>
+                <h2>A Game of Thrones<br>by George R.R. Martin</h2></a>
+            </div>
+        </div>
+        <div class="unwind-col">
+            <a href="https://www.takealot.com/a-thousand-splendid-suns/PLID61662671"><img src='unwind/thousand.jpg'>
+            <div class="layer">
+              <h1>#2</h1>
+                <h2>A Thousand Splendid Suns<br>by Khaled Hosseini</h2></a>
+            </div>
+        </div>
+        <div class="unwind-col">
+            <a href="https://www.takealot.com/a-brief-history-of-time/PLID35483501"><img src='unwind/time.jpg'>
+            <div class="layer">
+              <h1>#3</h1>
+                <h2>A Brief History Of Time<br>by Stpehen Hawking</by></h2></a>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+</section class="unwind">
+
+<div class="row">
+  <div class="unwind-col">
+      <a href="https://www.takealot.com/the-song-of-achilles/PLID46670258"><img src='unwind/cruel.jpg'>
+      <div class="layer">
+          <h1>#4</h1>
+          <h2>The Cruel Prince<br>by Holly Black</h2></a>
+      </div>
+  </div>
+  <div class="unwind-col">
+      <a href="https://www.takealot.com/a-thousand-splendid-suns/PLID61662671"><img src='unwind/song.jpg'>
+      <div class="layer">
+        <h1>#5</h1>
+          <h2>The Song of Achilles<br>by Madeline Miller</h2></a>
+      </div>
+  </div>
+  <div class="unwind-col">
+      <a href="https://www.takealot.com/beloved/PLID277273"><img src='unwind/beloved.jpg'>
+      <div class="layer">
+        <h1>#6</h1>
+          <h2>Beloved<br>by Toni Morrison</by></h2></a>
+      </div>
+  </div>
+</div>
+
+</section>
+
+
+<!-- ----- Footer ----- -->
+
+<section class="footer">
+    <h3>The First of <span class="showoff">Many</span></h3>
+    <p>© by Kea 2023.</p>
+</section>
+
+
+<!-----------Javascript for Toggle Menu----------->
+<script>
+   
+    var navLinks = document.getElementById("navLinks");
+    
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script> 
+
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+<script>
+    var typed = new Typed(".auto-input", {
+        strings: ["Books"],
+        typeSpeed: 100,
+        backspeed: 50,
+        loop: true
+    })
+</script>
+
+<script>
+    // Get the slides container
+const slidesContainer = document.querySelector('.slider');
+
+// Initialize variables for tracking scroll positions
+let startX = 0;
+let scrollLeft = 0;
+let isScrolling = false;
+
+// Add event listeners for touch and mouse events
+slidesContainer.addEventListener('mousedown', (e) => {
+  isScrolling = true;
+  startX = e.pageX - slidesContainer.offsetLeft;
+  scrollLeft = slidesContainer.scrollLeft;
+});
+
+slidesContainer.addEventListener('mouseleave', () => {
+  isScrolling = false;
+});
+
+slidesContainer.addEventListener('mouseup', () => {
+  isScrolling = false;
+});
+
+slidesContainer.addEventListener('mousemove', (e) => {
+  if (!isScrolling) return;
+  e.preventDefault();
+  const x = e.pageX - slidesContainer.offsetLeft;
+  const walk = (x - startX) * 3; // Adjust scrolling speed as needed
+  slidesContainer.scrollLeft = scrollLeft - walk;
+
+
+});
+
+slidesContainer.addEventListener('touchstart', (e) => {
+  isScrolling = true;
+  startX = e.touches[0].pageX - slidesContainer.offsetLeft;
+  scrollLeft = slidesContainer.scrollLeft;
+});
+
+slidesContainer.addEventListener('touchend', () => {
+  isScrolling = false;
+});
+
+slidesContainer.addEventListener('touchcancel', () => {
+  isScrolling = false;
+});
+
+slidesContainer.addEventListener('touchmove', (e) => {
+  if (!isScrolling) return;
+  e.preventDefault();
+  const x = e.touches[0].pageX - slidesContainer.offsetLeft;
+  const walk = (x - startX) * 3; // Adjust scrolling speed as needed
+  slidesContainer.scrollLeft = scrollLeft - walk;
+});
+
+</script>
+
+
+</body>
+</html>
+</div>  

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<div class="website-colour">
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+    <title>by kea.</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="style-thefuture.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+<section class="header">
+    <nav>
+        <a href="index.html" class="web-logo"><img src="barcode.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa-sharp fa-regular fa-circle-xmark" style="color: #ffffff;" onclick="hideMenu()"></i>
+        <ul>
+            <li> <a href="index.html">home</a></li>
+            <li> <a href="aboutme.html">about me</a></li>
+            <li> <a href="inspiration.html">inspiration</a></li>
+            <li> <a href="thefuturte.html">the future</a></li>
+        </ul>
+        </div>
+            <i class="fa-solid fa-bars" style="color: #ffffff;" onclick="showMenu()"></i>
+    </nav>
+        
+<div class="text-box">
+<h1><span class="auto-input"></h1>
+</div>
+        
+</section>
+    
+<!-- ----- Inspiration ----- -->
+
+<section class="preach">
+    <p>So where to from here? Well first I need to complete high school obviously. I know how much work is ahead of me <br> I'm fully prepared to work my hardest so I can get to where i want to. <br> To study Computer Science and Engineering at UCT. <br>  To starting my own business and seeing it grow to the heights I know I can take it to. <br> To financial freedom and living my life in a way that I've always dreamed. <br> But before i get too ahead of myself, let me take a few baby steps. <br> At the time of writing this, on the 13th of August 2023, I am 17 years old and currently attending Cambridge Academy about 3 months away from completing the 11th Grade. <br> So, to me in 5 years, to me in 10 years, to me in however many years it takes to reach my dreams: <br> <span class="showoff">Hey, did we make it?</span></p>
+</section>
+
+<!-- ----- Footer ----- -->
+
+<section class="footer">
+    <h3>The First of <span class="showoff">Many</span></h3>
+    <p>© by Kea 2023.</p>
+</section>
+
+
+<!-----------Javascript for Toggle Menu----------->
+<script>
+   
+    var navLinks = document.getElementById("navLinks");
+    
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script> 
+
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+<script>
+    var typed = new Typed(".auto-input", {
+        strings: ["The Future"],
+        typeSpeed: 100,
+        backspeed: 50,
+        loop: true
+    })
+</script>
+</body>
+</html>
+</div>  

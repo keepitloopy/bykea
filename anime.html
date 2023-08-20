@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<div class="website-colour">
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+    <title>by kea.</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="style-anime.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+<section class="header">
+    <nav>
+        <a href="index.html" class="web-logo"><img src="barcode.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa-sharp fa-regular fa-circle-xmark" style="color: #ffffff;" onclick="hideMenu()"></i>
+        <ul>
+            <li> <a href="index.html">home</a></li>
+            <li> <a href="aboutme.html">about me</a></li>
+            <li> <a href="inspiration.html">inspiration</a></li>
+            <li> <a href="thefuturte.html">the future</a></li>
+        </ul>
+        </div>
+            <i class="fa-solid fa-bars" style="color: #ffffff;" onclick="showMenu()"></i>
+    </nav>
+        
+<div class="text-box">
+<h1><span class="auto-input"></h1>
+<p>Japanese Animation or more commonly known as Anime is my favourite not-so-guilty pleasure.<br>Have a math test to study for? Why go through all that stress when you could lay back in bed <br> and watch any one of the thousands of shows you have at your disposal. <br> I've easily watched over 100 shows, some being abslute gems, <br> and others having me ask myself: "Why did I waste all that time on something so bad?". <br> However, I guarantee that every Anime I list here us 100% worth your time. Enjoy my Top 6!</p>
+</div>
+     
+<!-- Books -->
+
+</section class="unwind">
+
+        <div class="row">
+        <div class="unwind-col">
+            <a href="https://aniwatch.to/watch/one-piece-100?ep=83323"><img src='unwind/onepiece.jpg'>
+            <div class="layer">
+                <h1>#1</h1>
+                <h2>One Piece</h2></a>
+            </div>
+        </div>
+        <div class="unwind-col">
+            <a href="https://aniwatch.to/hunter-x-hunter-128?ref=search"><img src='unwind/hxh.jpg'>
+            <div class="layer">
+              <h1>#2</h1>
+                <h2>Hunter x Hunter</h2></a>
+            </div>
+        </div>
+        <div class="unwind-col">
+            <a href="https://aniwatch.to/neon-genesis-evangelion-209?ref=search"><img src='unwind/nge.jpg'>
+            <div class="layer">
+              <h1>#3</h1>
+                <h2>Neon Genesis Evangelion</by></h2></a>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+</section class="unwind">
+
+<div class="row">
+  <div class="unwind-col">
+      <a href="https://aniwatch.to/attack-on-titan-112?ref=search"><img src='unwind/aot.jpg'>
+      <div class="layer">
+          <h1>#4</h1>
+          <h2>Attack on Titan</h2></a>
+      </div>
+  </div>
+  <div class="unwind-col">
+      <a href="https://aniwatch.to/haikyu-76?ref=search"><img src='unwind/haikyuu.jpg'>
+      <div class="layer">
+        <h1>#5</h1>
+          <h2>Haikyuu!!</h2></a>
+      </div>
+  </div>
+  <div class="unwind-col">
+      <a href="https://aniwatch.to/jujutsu-kaisen-tv-534"><img src='unwind/jjk.jpg'>
+      <div class="layer">
+        <h1>#6</h1>
+          <h2>Jujutsu Kaisen</by></h2></a>
+      </div>
+  </div>
+</div>
+
+</section>
+
+
+<!-- ----- Footer ----- -->
+
+<section class="footer">
+    <h3>The First of <span class="showoff">Many</span></h3>
+    <p>© by Kea 2023.</p>
+</section>
+
+
+<!-----------Javascript for Toggle Menu----------->
+<script>
+   
+    var navLinks = document.getElementById("navLinks");
+    
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script> 
+
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+<script>
+    var typed = new Typed(".auto-input", {
+        strings: ["Anime"],
+        typeSpeed: 100,
+        backspeed: 50,
+        loop: true
+    })
+</script>
+
+<script>
+    // Get the slides container
+const slidesContainer = document.querySelector('.slider');
+
+// Initialize variables for tracking scroll positions
+let startX = 0;
+let scrollLeft = 0;
+let isScrolling = false;
+
+// Add event listeners for touch and mouse events
+slidesContainer.addEventListener('mousedown', (e) => {
+  isScrolling = true;
+  startX = e.pageX - slidesContainer.offsetLeft;
+  scrollLeft = slidesContainer.scrollLeft;
+});
+
+slidesContainer.addEventListener('mouseleave', () => {
+  isScrolling = false;
+});
+
+slidesContainer.addEventListener('mouseup', () => {
+  isScrolling = false;
+});
+
+slidesContainer.addEventListener('mousemove', (e) => {
+  if (!isScrolling) return;
+  e.preventDefault();
+  const x = e.pageX - slidesContainer.offsetLeft;
+  const walk = (x - startX) * 3; // Adjust scrolling speed as needed
+  slidesContainer.scrollLeft = scrollLeft - walk;
+
+
+});
+
+slidesContainer.addEventListener('touchstart', (e) => {
+  isScrolling = true;
+  startX = e.touches[0].pageX - slidesContainer.offsetLeft;
+  scrollLeft = slidesContainer.scrollLeft;
+});
+
+slidesContainer.addEventListener('touchend', () => {
+  isScrolling = false;
+});
+
+slidesContainer.addEventListener('touchcancel', () => {
+  isScrolling = false;
+});
+
+slidesContainer.addEventListener('touchmove', (e) => {
+  if (!isScrolling) return;
+  e.preventDefault();
+  const x = e.touches[0].pageX - slidesContainer.offsetLeft;
+  const walk = (x - startX) * 3; // Adjust scrolling speed as needed
+  slidesContainer.scrollLeft = scrollLeft - walk;
+});
+
+</script>
+
+
+</body>
+</html>
+</div>  

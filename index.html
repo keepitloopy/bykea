@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<div class="website-colour">
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+    <title>by kea.</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+<section class="header">
+    <nav>
+        <a href="index.html" class="web-logo"><img src="barcode.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa-sharp fa-regular fa-circle-xmark" style="color: #ffffff;" onclick="hideMenu()"></i>
+        <ul>
+            <li> <a href="index.html">home</a></li>
+            <li> <a href="aboutme.html">about me</a></li>
+            <li> <a href="inspiration.html">inspiration</a></li>
+            <li> <a href="thefuture.html">the future</a></li>
+        </ul>
+        </div>
+            <i class="fa-solid fa-bars" style="color: #ffffff;" onclick="showMenu()"></i>
+    </nav>
+        
+<div class="text-box">
+<h1>I am <span class="auto-input"></h1>
+<p>A home for all my favourite things in life <br>and a step towards my dreams :) </p>
+<a href="aboutme.html" class="hero-btn">Dive In and Learn About Me</a>
+</div>
+        
+</section>
+    
+<!--dna-->
+
+<section class="dna">
+    <h1>My <span class="change">DNA</h1>
+    <p>These are some of the things that make up my DNA.<br>This is what makes me, me!</p>
+    <div class="row">
+        <div class="dna-col">
+            <h2>Coding</h2>
+            <a href="coding.html" style="text-decoration: none;"><p>Coding and programming is what I will use to pave a path towards my future and is the very reason I chose to design a website instead of making a "traditional" magazine. Problem solving, math, computers and cool interfaces! What more could you ask for?</p></a>
+        
+        </div>
+        <div class="dna-col">
+            <h2>Math</h2>
+            <a href="mathgame.html" style="text-decoration: none;"><p>I've always been a huge nerd for numbers. I mean what more can I say, numbers are cool and I love them to death! From stupid stats like: how many waterdrops would need to be lined up to be the length of a light year to cool equations with fancy letters, there are so many reasons to love math!</p></a>
+        
+        </div>
+        <div class="dna-col">
+            <h2>Chess</h2>
+            <a href="chess.html" style="text-decoration: none;"><p>64 Squares. 32 Pieces. And a rainfall of tears. My love-hate relationship with this agonisingly addictive game is one I cannot express in words, but one that I cherish. I'm only at a rating of 1110 right now but one day I hope to reach the coveted 2000 rating and truly become a chess master!</p></a>
+        
+        </div>
+
+        
+    </div>
+
+
+</section>
+
+<section class="unwind">
+    <h1><span class="unwind_">Un</span>wind</h1>
+    <p>As much as I love chess, codinng, math etc. I don't always want to flex my mind and challenge myself.<br> This is what I do to unwind and relax.</p>
+
+    <div class="row">
+        <div class="unwind-col">
+            <a href="books.html"><img src='books/read.jpg'>
+            <div class="layer">
+                <h2>BOOKS</h2></a>
+            </div>
+        </div>
+        <div class="unwind-col">
+            <a href="anime.html"><img src='anime/hxh.jpg'>
+            <div class="layer">
+                <h2>ANIME</h2></a>
+            </div>
+        </div>
+        <div class="unwind-col">
+            <a href="drawings.html"><img src='drawing/drawing.jpg'>
+            <div class="layer">
+                <h2>DRAWING</h2></a>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- -----Thank You----- -->
+
+<section class="thanks">
+    <h1>Thank You for Visiting My Site :)</h1>
+    <a href="#" class="hero-btn">BACK TO TOP</a>
+
+</section>
+
+<!-- ----- Footer ----- -->
+
+<section class="footer">
+    <h3>The First of <span class="showoff">Many</span></h3>
+    <p>After hundreds, if not thousands of lines of code I've finally made my first website<br> This journey of constantly having my eyes glued to a computer screen, building my next, new, exciting project is one that i hope never ends.<br>I'm so excited to see what I can make next, stay tuned!<br>    <br>© by Kea 2023.</p>
+</section>
+
+
+<!-----------Javascript for Toggle Menu----------->
+<script>
+   
+    var navLinks = document.getElementById("navLinks");
+    
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script> 
+
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+<script>
+    var typed = new Typed(".auto-input", {
+        strings: ["a Programmer.", "a Chess Player.", "a Mathematician.", "Unapologetically and Authentically Me.", "Kea."],
+        typeSpeed: 100,
+        backspeed: 50,
+        loop: true
+    })
+</script>
+</body>
+</html>
+</div>  
